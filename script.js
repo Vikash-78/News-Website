@@ -1,5 +1,5 @@
-const API_KEY="b751f9812827485b902bf2e326f5560d";
-const url = "https://newsapi.org/v2/everything?q=";
+const API_KEY="b3edd359647mshacfd56e0183a8ffp189ed1jsn26de6d66e629";
+const url = "https://google-news13.p.rapidapi.com/latest";
 
 window.addEventListener("load", () => fetchNews("India"));
 
