@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- navbar made here -->
+    <nav>
+        <div class="mainNav container flex">
+            <a href="#" onclick="reload()" class="newsLogo">
+                <img src="logo.png" alt="news logo">
+            </a>
+            <div class="navLinks">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                </ul>
+            </div>
+            <!-- searchBar made here -->
+            <div class="searchBar flex">
+                <input type="text" class="news-input" id="searchInput" placeholder="search your news">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+
+    <!-- The <template> HTML element is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript. -->
+    <template id="templateNewscard">
+        <div class="card">
+            <div class="cardHeader">
+                <img src="https://via.placeholder.com/400x200" alt="error" id="newsImg">
+            </div>
+            <div class="cardContent">
+                <h3 id="newsTitle">This is the Title</h3>
+                <h6 class="newsSource" id="newsSource">gadget 2/02/2023</h6>
+                <p class="newsDesc" id="newsDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi odit incidunt maxime. Sed voluptatem quisquam ipsam possimus reprehenderit, aut voluptates.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

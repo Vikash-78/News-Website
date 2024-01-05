@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:ital,wght@0,100;0,300;0,400;0,900;1,100;1,200&family=Roboto:wght@100&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56 ;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+/* //navbar */
+nav{
+    background-color: azure;
+    box-shadow: 0px 0px 5px blueviolet;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    position: fixed;                      /*used for navbar position is fixed*/
+}
+
+.mainNav{
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.navLinks ul{
+    gap: 10px;
+}
+
+.newsLogo img{
+    width: 50px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{          /*when we go at the options there color change*/
+    color: var(--secondary-text-color);
+}
+.hover-link:active{          /*on clicking links become red*/
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+.searchBar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding: 12px 0;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+/* make card  */
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    max-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 8px #d4ecff;
+    background-color: aliceblue;
+    transform: translateY(-2px);            /*on hovering there it goes up by 2px*/
+}
+
+.cardHeader img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 12px;
+}
+
+.newsSource {
+    margin-block: 12px;
+}
